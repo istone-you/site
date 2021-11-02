@@ -1,0 +1,213 @@
+
+html { scroll-behavior: smooth;}
+
+
+body{
+	margin: 0;
+
+}
+
+header {
+  background-color: black;
+  height: 80px;
+  margin-bottom: 25px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.link-list{
+  position: fixed;
+  top: 15px;
+  right: 10px;
+  width: 350px;
+}
+
+ul {
+  list-style: none;
+  
+}
+
+.link-list img{
+  float: right;
+  height: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.link-list img:hover {
+  opacity: 0.7;
+  height:21px;
+  position: relative;
+
+}
+
+.link-list img:active {
+  position:relative;
+  top: 1px;
+}
+
+p,h1:hover {
+    cursor:default;
+  
+}
+
+.logo {
+  z-index: 11;
+  float: left;
+  padding-left: 0;
+  padding-top: 10px;
+  width: 170px;
+  animation: left-efect 0.3s forwards;
+  transition: all 0.7s;
+  position:relative;
+}
+
+.logo:hover {
+  opacity: 0;
+  animation: right-efect 0.3s forwards;
+}
+
+@keyframes right-efect {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes left-efect {
+  0% {
+   transform: translateX(30px);
+ }
+ 100% {
+   transform: translateX(0px);
+ }
+}
+
+.logo-gif {
+  opacity: 0;
+  float: left;
+  padding-left: 0;
+  padding-top: 12px;
+  height: 56px;
+  position:relative;
+  right: 170px;
+  animation: left-efect 0.3s forwards;
+  transition: all 0.3s;
+}
+
+.logo:hover + .logo-gif {
+  opacity: 1;
+  right: 140px;
+}
+
+.logo-link:active{
+  opacity: 0.7;
+}
+
+
+.view {
+  height: 400px;
+  background-image: url(./絶景.jpeg);
+  background-size:cover;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.view h1 {
+  color: white;
+  font-size: 40px;
+  font-family: "Impact";
+  line-height: 400px;
+  text-align: center;
+}
+
+.view p {
+  text-align: center;
+  margin-top: -200px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.img{ 
+  transition: all 0.5s;
+  width: 203px;
+}
+
+.img:hover:hover{
+  opacity: 0.5;
+  width: 210px;
+}
+
+.samurai-img {
+  transition: all 0.5s;
+  width:190px; height: 90px;
+	object-fit:cover;
+  object-position: -40px 20px;
+}
+.samurai-img:hover {
+  opacity: 0.5;
+  width: 200px;
+  height: 93px;
+}
+
+.img:active,.samurai-img:active {
+  position:relative;
+  top:2px;
+}
+
+.DAZN-img {
+  transition: all 0.5s;
+  width: 130px;
+}
+
+.DAZN-img:hover {
+  opacity: 0.5;
+  width: 135px;
+}
+
+.co {
+  display:flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.con{
+  margin : 20px;
+}
+
+
+.contents {
+  margin-bottom: 100px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contents p {
+  font-family: "Comic Sans MS";
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+}
+
+.link{
+    display: block;
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+
+footer {
+  background-color: gray;
+  height: 300px;
+}
+
+
