@@ -16,8 +16,35 @@ header {
   z-index: 10;
 }
 
-header img{
-  padding-left: 30px;
+.link-list{
+  position: fixed;
+  top: 15px;
+  right: 10px;
+  width: 350px;
+}
+
+ul {
+  list-style: none;
+  
+}
+
+.link-list img{
+  float: right;
+  height: 20px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.link-list img:hover {
+  opacity: 0.7;
+  height:21px;
+  position: relative;
+
+}
+
+.link-list img:active {
+  position:relative;
+  top: 1px;
 }
 
 p,h1:hover {
@@ -177,33 +204,6 @@ p,h1:hover {
     margin-top: -80px;
 }
 
-
-ul {
-  list-style: none;
-  position:relative;
-  right: 70px;
-  bottom: 10px;
-  width: 700px;
-}
-
-.link-list img{
-  float: left;
-  height: 20px;
-  cursor: pointer;
-}
-
-.link-list img:hover {
-  opacity: 0.7;
-  height:21px;
-  position: relative;
-  bottom:1px;
-
-}
-
-.link-list img:active {
-  position:relative;
-  top: 1px;
-}
 
 footer {
   background-color: gray;
